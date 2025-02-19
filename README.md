@@ -33,7 +33,7 @@ Before creating a Docker image, you need to package the Spring Boot application:
 
 Go to the root directory of the pulled repository
 ```sh
-cd /path/to/your/project
+cd /path/to/the/project
 ```
 
 For **Maven**:
