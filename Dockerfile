@@ -1,0 +1,14 @@
+# Use an OpenJDK 23 base image
+FROM openjdk:23-ea-jdk
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the jar file from your machine to the container
+COPY target/ReceiptProcessor-1.0-SNAPSHOT.jar /app/app.jar
+
+# Expose the port your application will run on
+EXPOSE 8080
+
+# Run the jar file
+ENTRYPOINT ["java", "-jar", "app.jar"]
