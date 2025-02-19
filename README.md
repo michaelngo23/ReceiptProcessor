@@ -7,7 +7,7 @@ Provide any instructions required to run your application.
 
 Data does not need to persist when your application stops. It is sufficient to store information in memory. There are too many different database solutions, we will not be installing a database on our system when testing your application.
 
-## Language Selection
+## Framework Selection
 Java Version 23 | Springboot Version 3.3.3
 
 #How to Run Docker Locally
