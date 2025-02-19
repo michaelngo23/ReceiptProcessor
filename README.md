@@ -29,7 +29,12 @@ Ensure you have the following installed:
 
 ### 📦 Step 1: Build the Spring Boot JAR File
 
-Before creating a Docker image, you need to package your Spring Boot application:
+Before creating a Docker image, you need to package the Spring Boot application:
+
+Go to the root directory of the pulled repository
+```sh
+cd /path/to/your/project
+```
 
 For **Maven**:
 ```sh
