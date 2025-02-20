@@ -25,7 +25,7 @@ public class MultipleOf25PointsRuleTest {
     }
 
     @Test
-    public void testCalculate_WithMultipleOf25_ShouldReturn25Points() {
+    void testCalculate_WithMultipleOf25_ShouldReturn25Points() {
         // When
         mockReceiptRequest.setTotal("100");
         RuleResult result = rule.calculate(mockReceiptRequest);
@@ -36,7 +36,7 @@ public class MultipleOf25PointsRuleTest {
     }
 
     @Test
-    public void testCalculate_WithMultipleOf25Point25_ShouldReturn25Points() {
+    void testCalculate_WithMultipleOf25Point25_ShouldReturn25Points() {
         mockReceiptRequest.setTotal(".25");
         RuleResult result = rule.calculate(mockReceiptRequest);
         // Then
@@ -45,7 +45,7 @@ public class MultipleOf25PointsRuleTest {
     }
 
     @Test
-    public void testCalculate_WithNotMultipleOf25_ShouldReturn0Points() {
+    void testCalculate_WithNotMultipleOf25_ShouldReturn0Points() {
         mockReceiptRequest.setTotal("100.01");
         RuleResult result = rule.calculate(mockReceiptRequest);
 
@@ -55,7 +55,7 @@ public class MultipleOf25PointsRuleTest {
     }
 
     @Test
-    public void testCalculate_WithNegativeValue_ShouldReturn0Points() {
+    void testCalculate_WithNegativeValue_ShouldReturn0Points() {
         mockReceiptRequest.setTotal("-100.00");
         RuleResult result = rule.calculate(mockReceiptRequest);
 
@@ -65,7 +65,7 @@ public class MultipleOf25PointsRuleTest {
     }
 
     @Test
-    public void testCalculate_WithZero_ShouldReturn0Points() {
+    void testCalculate_WithZero_ShouldReturn0Points() {
         mockReceiptRequest.setTotal("0.00");
         RuleResult result = rule.calculate(mockReceiptRequest);
 
@@ -77,7 +77,7 @@ public class MultipleOf25PointsRuleTest {
 
 
     @Test
-    public void testCalculate_WithVerySmallValue_ShouldReturn0Points() {
+    void testCalculate_WithVerySmallValue_ShouldReturn0Points() {
         mockReceiptRequest.setTotal("0.01");
         RuleResult result = rule.calculate(mockReceiptRequest);
 
