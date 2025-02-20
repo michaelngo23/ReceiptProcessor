@@ -10,7 +10,7 @@ Data does not need to persist when your application stops. It is sufficient to s
 ## Framework Selection
 Java Version 23 | Springboot Version 3.3.3
 
-#How to Run Docker Locally
+# How to Run Docker Locally
 
 ## Spring Boot Dockerized Application
 
