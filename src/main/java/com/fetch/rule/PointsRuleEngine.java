@@ -22,9 +22,6 @@ public class PointsRuleEngine {
                 .map(rule -> rule.calculate(receipt))  // Apply each rule
                 .toList();
 
-        //for( RuleResult r : ruleResults){
-        //    System.out.println(r.getRuleName() + " | " + r.getPoints());
-        //}
         return ruleResults.stream()
                 .mapToLong(RuleResult::getPoints)  // Sum up the points
                 .sum();
