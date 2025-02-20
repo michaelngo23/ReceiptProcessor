@@ -1,5 +1,6 @@
-package com.fetch.controller;
+package com.fetch.controller.impl;
 
+import com.fetch.controller.ReceiptProcessorController;
 import com.fetch.model.request.ReceiptRequest;
 import com.fetch.model.response.ReceiptResponse;
 import com.fetch.service.ReceiptProcessorService;
