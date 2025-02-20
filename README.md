@@ -8,7 +8,7 @@ Provide any instructions required to run your application.
 Data does not need to persist when your application stops. It is sufficient to store information in memory. There are too many different database solutions, we will not be installing a database on our system when testing your application.
 
 ## Framework Selection
-Java Version 23 | Springboot Version 3.3.3
+Java Version 17 | Springboot Version 3.3.3
 
 # How to Run Docker Locally
 
@@ -22,30 +22,17 @@ This guide explains how to build, package, and run a Spring Boot application ins
 
 Ensure you have the following installed:
 
-- **Java 23+** (Check with `java -version`)
-- **Maven or Gradle** (Check with `mvn -version` or `gradle -version`)
 - **Docker** (Check with `docker --version`)
 ---
 
 ### 📦 Step 1: Build the Spring Boot JAR File
 
-Before creating a Docker image, you need to package the Spring Boot application:
+Before creating a Docker image:
 
 Go to the root directory of the pulled repository
 ```sh
 cd /path/to/the/project
 ```
-
-For **Maven**:
-```sh
-mvn clean package
-```
-For **Gradle**:
-```sh
-gradle build
-```
-
-This generates a .jar file inside the target/ (Maven) or build/libs/ (Gradle) directory.
 
 ### 📦 Step 2: Update/Create a Dockerfile
 
