@@ -23,6 +23,7 @@ This guide explains how to build, package, and run a Spring Boot application ins
 Ensure you have the following installed:
 
 - **Docker** (Check with `docker --version`)
+- **Maven** (Check with `mvn --version`)
 ---
 
 ### 📦 Step 1: Build the Spring Boot JAR File
