@@ -52,10 +52,8 @@ public class ItemCountPointsRuleTest {
     void calculate_ShouldReturnZeroPoints_WhenNoItems() {
         // Given: No items
         receiptRequest.setItems(Collections.emptyList());
-
         // When: Rule is applied
         RuleResult result = rule.calculate(receiptRequest);
-
         // Then: 0 points expected
         assertEquals(0L, result.getPoints());
         assertEquals("Item Count Points", result.getRuleName());
