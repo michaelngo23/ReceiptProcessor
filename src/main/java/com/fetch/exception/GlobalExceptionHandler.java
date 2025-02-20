@@ -30,9 +30,7 @@ public class GlobalExceptionHandler {
         List<String> errors = ex.getBindingResult().getFieldErrors()
                 .stream()
                 .map(fieldError -> fieldError.getField() + ": " + fieldError.getDefaultMessage())
-                .collect(Collectors.toList());
-
-        //System.out.println(errors);
+                .toList();
 
         CustomErrorResponse errorResponse = new CustomErrorResponse(
                 HttpStatus.BAD_REQUEST.value(),

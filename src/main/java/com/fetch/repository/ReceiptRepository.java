@@ -4,9 +4,7 @@ import com.fetch.model.request.ReceiptRequest;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -26,6 +24,7 @@ public class ReceiptRepository {
         return idPointMap.getOrDefault(id,null);
     }
 
+    //future potential to enhance with delete receipt from databases
     public void deleteReceipt(String id) {
         idPointMap.remove(id);
         idReceiptRequestMap.remove(id);
